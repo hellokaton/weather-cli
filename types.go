@@ -1,5 +1,6 @@
 package main
 
+// 响应
 type Response struct {
 	Status   int    `json:"status"`
 	CityName string `json:"city"`
@@ -9,6 +10,7 @@ type Response struct {
 	Count    int    `json:"count"`
 }
 
+// 响应数据
 type Data struct {
 	ShiDu     string `json:"shidu"`
 	Quality   string `json:"quality"`
@@ -17,6 +19,7 @@ type Data struct {
 	Forecast  []Day  `json:"forecast"`
 }
 
+// 某一天的数据
 type Day struct {
 	Date    string  `json:"date"`
 	Sunrise string  `json:"sunrise"`
